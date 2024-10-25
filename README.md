@@ -11,6 +11,8 @@ To set up the server locally, follow these steps:
    ```bash
    npm install
 2. **Start the Server:** Use the command below to start the server:
+   ```bash
+   npm start
 
 # Usage
 
@@ -25,12 +27,16 @@ Coza Store daxil olmaq və qeydiyyatdan keçmək üçün README faylını oxuma�
 
 ## Quraşdırma
 
-1. `npm install` komutunu istifadə edərək asılılıqları quraşdırın.
-2. `npm start` komutunu işlədərək tətbiqi başladın.
+1. Bu sətri izləyərək paketləri yükləyin:
+    ```bash
+   npm install
+2. Aşağıdakı sətri yazaraq serveri başladın:
+   ```bash
+   npm start
 
 ## İstifadə
 
-`npm start` dedikdən sonra səhifəyə gedib orada qeydiyyatdan keçdikdən sonra daxil ola bilərsiz:
+npm start dedikdən sonra səhifəyə gedib orada qeydiyyatdan keçdikdən sonra daxil ola bilərsiz:
 - **Qeydiyyat:** Qeydiyyat səhifəsinə get və hesab yarat.
 - **Giriş:** Qeydiyyatdan sonra, etimadnamənizlə daxil ola bilərsiniz.
 
