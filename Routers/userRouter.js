@@ -4,7 +4,7 @@ import User from "../models/userModel.js";
 
 const router = express.Router();
 
-router.post("/signup", async (req, res) => {
+router.post("/users/signup", async (req, res) => {
   try {
     console.log(req.body);
     const { fullName, password, currentPassword, phoneNumber, email } =
@@ -37,7 +37,7 @@ router.post("/signup", async (req, res) => {
   }
 });
 
-router.post("/signin", async (req, res) => {
+router.post("/users/signin", async (req, res) => {
   try {
     console.log(req.body);
     const { email, password } = req.body;
