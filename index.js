@@ -4,13 +4,9 @@ import mongoose from "mongoose";
 import userRouter from "./Routers/userRouter.js";
 import cors from "cors";
 
-// Ortam değişkenlerini yükle
+
 dotenv.config();
 
-// DB_CONNECTION_STR değerini kontrol et
-console.log("DB_CONNECTION_STR:", process.env.DB_CONNECTION_STR);
-
-// MongoDB'ye bağlanmayı dene
 mongoose
   .connect(process.env.DB_CONNECTION_STR)
   .then(() => console.log("MongoDB'ye bağlanıldı"))
