@@ -19,7 +19,7 @@ EXPOSE 5000
 # Set the environment variables to ensure MongoDB connects correctly
 # Ensure you use the appropriate MongoDB URI in your environment (e.g., from .env file)
 # Example: DB_CONNECTION_STR="mongodb://mongo:27017/yourdb"
-ENV DB_CONNECTION_STR=mongodb://mongo:27017/CozaStoreUser
+ENV DB_CONNECTION_STR=mongodb://127.0.0.1:27017/CozaStoreUser
 ENV PORT=5000
 
 # Start the application

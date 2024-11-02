@@ -5,7 +5,7 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - DB_CONNECTION_STR=mongodb://mongo:27017/CozaStoreUser
+      - DB_CONNECTION_STR=mongodb://127.0.0.1:27017/CozaStoreUser
     depends_on:
       - mongo
     networks:
