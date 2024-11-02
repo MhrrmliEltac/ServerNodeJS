@@ -7,10 +7,7 @@ import cors from "cors";
 dotenv.config();
 
 mongoose
-  .connect(process.env.DB_CONNECTION_STR, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(process.env.DB_CONNECTION_STR)
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
@@ -20,5 +17,5 @@ app.use(cors());
 app.use("/users", userRouter);
 
 app.listen(5000, () => {
-  console.log("Connected");
+  console.log("Server is running on port 5000");
 });
