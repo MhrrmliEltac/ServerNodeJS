@@ -4,11 +4,10 @@ import mongoose from "mongoose";
 import userRouter from "./Routers/userRouter.js";
 import cors from "cors";
 
-
 dotenv.config();
 
 mongoose
-  .connect(process.env.DB_CONNECTION_STR)
+  .connect("mongodb://127.0.0.1:27017/CozaStoreUser")
   .then(() => console.log("MongoDB'ye bağlanıldı"))
   .catch((err) => console.error("MongoDB bağlantı hatası:", err));
 
