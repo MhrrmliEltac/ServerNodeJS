@@ -7,9 +7,12 @@ import cors from "cors";
 dotenv.config();
 
 mongoose
-  .connect(process.env.DB_CONNECTION_STR)
-  .then(() => console.log("Connected to MongoDB"))
-  .catch((err) => console.error("MongoDB connection error:", err));
+  .connect(process.env.DB_CONNECTION_STR, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("MongoDB'ye bağlanıldı"))
+  .catch((err) => console.error("MongoDB bağlantı hatası:", err));
 
 const app = express();
 app.use(express.json());
